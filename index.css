@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background:linear-gradient(135deg, #153677, #4e085f);
+    color: #333;
+    }
+    main {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    max-width: 600px;
+    margin:70px auto;
+    }
+    
+    .todo-app {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    #task-form {
+    display: flex;
+    gap: 10px;
+    padding: 0.7rem 0;
+    }
+    
+    #task-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    }
+    
+    #add-task-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    }
+    
+    #add-task-btn:hover {
+    background-color: #218838;
+    }
+    
+    ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    }
+    
+    li {
+    background: #f4f4f4;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    }
+    
+    button.edit-btn, button.delete-btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    }
+    
+    button.edit-btn {
+    background-color: #ffc107;
+    color: white;
+    }
+    
+    button.edit-btn:hover {
+    background-color: #e0a800;
+    }
+    
+    button.delete-btn {
+    background-color: #dc3545;
+    color: white;
+    }
+    
+    button.delete-btn:hover {
+    background-color: #c82333;
+    }
+    
+    /* Checked Tasks */
+    .checked {
+    text-decoration: line-through;
+    color: gray;
+    }
